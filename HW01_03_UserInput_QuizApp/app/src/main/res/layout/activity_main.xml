@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical"
+     tools:context=".MainActivity">
+
+  <TextView
+      android:id="@+id/tQuestion"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="8dp"
+      android:layout_marginTop="24dp"
+      android:layout_marginRight="14dp"
+      android:text="Question"
+      android:textSize="20sp" />
+
+ <RadioGroup
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+
+     <RadioButton
+         android:id="@+id/answer1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="8dp"
+         android:checked="true"
+         android:text="answer 1" />
+
+  <RadioButton
+      android:id="@+id/answer2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="answer 2" />
+
+  <RadioButton
+      android:id="@+id/answer3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="answer 3" />
+
+     <Button
+         android:id="@+id/submit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:onClick="onClickSubmit"
+         android:text="SUBMIT"/>
+
+     <TextView
+         android:id="@+id/tRight"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="right "
+         android:textColor="@color/colorPrimary"
+         android:textSize="18sp" />
+
+     <TextView
+         android:id="@+id/tWrong"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="wrong"
+         android:textColor="@color/colorAccent"
+         android:textSize="18sp" />
+
+     <TextView
+         android:id="@+id/tFinish"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textSize="30sp" />
+
+ </RadioGroup>
+ </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
